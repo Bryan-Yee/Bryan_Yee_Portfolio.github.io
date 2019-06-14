@@ -30,8 +30,8 @@ border-radius : 15px;
 .column {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
-  max-width: 50%;
-  padding: 10px;
+  max-width: 25%;
+  padding: 4px;
 }
 
 .column img {

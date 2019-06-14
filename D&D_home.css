@@ -1,3 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  padding:20px;
+  background-color: #ffe9ac;
+  background-clip:content-box;
+}
+img {
+border-radius : 15px;
+}
+
+.pool:link {
+  overflow: hidden;
+  font-size:20px;
+  text-decoration:none;
+  color: darkblue;
+}
+.pool:hover{
+text-decoration:overline underline;
+padding:5px;
+}
+
 .pool:link {
     overflow: hidden;
     font-size:20px;
@@ -8,3 +30,4 @@
 text-decoration:overline underline;
 padding:5px;
   }
+  
