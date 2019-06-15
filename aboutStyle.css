@@ -6,7 +6,7 @@ body {
   background-clip:padding-box;
   padding-bottom:250px;
 }
-img {
+.imga {
 border-radius : 5px;
 float:left;
 padding: 10px;
@@ -45,8 +45,6 @@ word-wrap:break-word;
     margin-top:0px;
     margin-bottom:0px;
 margin-left:50px;
-padding-top:10px;
-padding-bottom:50%;
 padding-right:50px;
 padding-left:10px;
 background: white;
@@ -55,7 +53,7 @@ background: white;
   }
 
   @media screen and (max-width: 800px) {
-img{
+.imga{
   max-width:300px;
 }
 
@@ -66,3 +64,15 @@ hr{
   color: darkblue;
 border-radius: 5px;
 }
+
+.sidebar{
+position:fixed;
+top:125px;
+right:50px;
+width:50px;
+}
+
+
+
+
+

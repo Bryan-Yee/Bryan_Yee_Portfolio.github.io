@@ -3,14 +3,14 @@ body {
   font-family: Arial;
   padding:20px;
   background-color: #ffe9ac;
-  background-clip:content-box;
-  padding-bottom:250px;
+  background-clip: padding-box;
+  padding-bottom:500px;
 }
 img {
 border-radius : 5px;
 float:left;
 padding: 10px;
-padding-left: 10px;
+
 }
 
 .pool:link {
@@ -35,7 +35,7 @@ text-decoration:overline underline;
 padding:5px;
   }
   p{
-    padding-left:10px;
+    padding:5px;
 max-width:75%;
 word-wrap:break-word;
  
