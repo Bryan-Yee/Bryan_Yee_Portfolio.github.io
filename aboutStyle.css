@@ -1,9 +1,10 @@
 body {
-  margin: 0;
+  margin: 20px;
   font-family: Arial;
   padding:20px;
   background-color: #ffe9ac;
-  background-clip:content-box;
+  background-clip:padding-box;
+  padding-bottom:250px;
 }
 img {
 border-radius : 5px;
@@ -45,7 +46,7 @@ word-wrap:break-word;
     margin-bottom:0px;
 margin-left:50px;
 padding-top:10px;
-padding-bottom:10px;
+padding-bottom:50%;
 padding-right:50px;
 padding-left:10px;
 background: white;
@@ -59,3 +60,9 @@ img{
 }
 
   }
+
+hr{
+  border-width:3px; 
+  color: darkblue;
+border-radius: 5px;
+}

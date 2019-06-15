@@ -1,9 +1,10 @@
 body {
-  margin: 0;
+  margin: 20;
   font-family: Arial;
   padding:20px;
   background-color: #ffe9ac;
   background-clip:content-box;
+  padding-bottom:250px;
 }
 img {
 border-radius : 5px;
