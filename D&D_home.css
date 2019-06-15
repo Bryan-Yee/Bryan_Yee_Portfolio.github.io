@@ -6,7 +6,10 @@ body {
   background-clip:content-box;
 }
 img {
-border-radius : 15px;
+border-radius : 5px;
+float:left;
+padding: 10px;
+padding-left: 10px;
 }
 
 .pool:link {
@@ -30,4 +33,29 @@ padding:5px;
 text-decoration:overline underline;
 padding:5px;
   }
+  p{
+    padding-left:10px;
+max-width:75%;
+word-wrap:break-word;
+ 
+  }
   
+  .padded{
+    margin-top:0px;
+    margin-bottom:0px;
+margin-left:50px;
+padding-top:10px;
+padding-bottom:10px;
+padding-right:50px;
+padding-left:10px;
+background: white;
+    border-radius : 5px;
+    background-clip: padding-box;
+  }
+
+  @media screen and (max-width: 800px) {
+img{
+  max-width:300px;
+}
+
+  }
