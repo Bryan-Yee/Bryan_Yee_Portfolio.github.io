@@ -107,3 +107,9 @@ border-radius : 15px;
 text-decoration:overline underline;
 padding:5px;
   }
+
+  hr{
+    border-width:3px; 
+    color: darkblue;
+  border-radius: 5px;
+  }
