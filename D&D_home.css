@@ -4,7 +4,7 @@ body {
   padding:20px;
   background-color: #ffe9ac;
   padding-bottom:250px;
-  background-clip:content-box;
+  background-clip:padding-box;
 }
 img {
 border-radius : 5px;
