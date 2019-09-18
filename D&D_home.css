@@ -3,8 +3,8 @@ body {
   font-family: Arial;
   padding:20px;
   background-color: #ffe9ac;
-  background-clip:content-box;
   padding-bottom:250px;
+  background-clip:padding-box;
 }
 img {
 border-radius : 5px;
