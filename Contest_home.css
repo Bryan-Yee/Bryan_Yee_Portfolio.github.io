@@ -1,24 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 20px;
   font-family: Arial;
   padding:20px;
   background-color: #ffe9ac;
-
-  padding-bottom:250px;
+ 
 }
 img {
-border-radius : 5px;
-float:left;
-padding: 10px;
+border-radius : 15px;
 
 }
-
-.pool:hover{
-text-decoration:overline underline;
-padding:5px;
+.header {
+  text-align: center;
+  padding: 32px;
+}
+/*flex-wrap = should the picture wrap or not, like a grid but without bootstrap*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 25px;
 }
 
-.pool:link {
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  max-width: 25%;
+  padding: 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 75%;
+    max-width: 75%;
+    
+  }
+}
+  
+  /*-------image overlay----------*/
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  
+  /*-------------------------------*/
+
+  .pool:link {
     overflow: hidden;
     font-size:20px;
     text-decoration:none;
@@ -28,32 +107,7 @@ padding:5px;
 text-decoration:overline underline;
 padding:5px;
   }
-  p{
-    padding:5px;
-max-width:75%;
-word-wrap:break-word;
- 
-  }
-  
-  .padded{
-    margin-top:0px;
-    margin-bottom:0px;
-margin-left:50px;
-padding-top:10px;
-padding-bottom:10px;
-padding-right:50px;
-padding-left:10px;
-background: white;
-    border-radius : 5px;
-    background-clip: padding-box;
-  }
 
-  @media screen and (max-width: 800px) {
-img{
-  max-width:300px;
-}
-
-  }
   hr{
     border-width:3px; 
     color: darkblue;
