@@ -12,6 +12,13 @@ margin: 20px;
     padding-bottom:500px;
 }
 
+ hr{
+    border-width:3px; 
+    color: darkblue;
+  border-radius: 5px;
+  padding-right:5px;
+  }
+
 /* Header/Blog Title */
 .header {
   padding: 30px;
