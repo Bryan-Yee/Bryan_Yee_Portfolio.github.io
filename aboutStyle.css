@@ -19,6 +19,22 @@ margin: 20px;
   padding-right:5px;
   }
 
+.pool:link {
+  overflow: hidden;
+  font-size:20px;
+  text-decoration:none;
+  color: darkblue;
+}
+.pool:hover{
+text-decoration:overline underline;
+padding:5px;
+}
+
+  .pool:hover{
+text-decoration:overline underline;
+padding:5px;
+  }
+
 /* Header/Blog Title */
 .header {
   padding: 30px;
