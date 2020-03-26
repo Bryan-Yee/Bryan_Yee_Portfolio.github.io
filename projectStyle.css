@@ -36,7 +36,7 @@ border-radius : 15px;
 .column {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
-  max-width: 0%;
+  max-width: 25%;
   padding: 4px;
 }
 
@@ -51,7 +51,7 @@ border-radius : 15px;
   .column {
     -ms-flex: 50%;
     flex: 50%;
-    max-width: 0%;
+    max-width: 50%;
   }
 }
 
@@ -60,7 +60,7 @@ border-radius : 15px;
   .column {
     -ms-flex: 50%;
     flex: 75%;
-    max-width: 0%;
+    max-width: 75%;
     
   }
 }
