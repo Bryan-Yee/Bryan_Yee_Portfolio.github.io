@@ -46,7 +46,7 @@
 
 
 .row {
-  margin-left:25%;
+  margin-left: 15%;
   padding-left:15px;
 }
 
@@ -58,7 +58,7 @@
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-
+width:500px;
 }
 
 /* Clear floats after rows */ 
@@ -98,8 +98,8 @@
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
-  width: 300px;
-  height:300px;
+  width: 500px;
+  height:500px;
   transition: .5s ease;
   opacity:0;
   color: white;
