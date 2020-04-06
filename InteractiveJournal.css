@@ -109,6 +109,10 @@
       border-radius: 5px;
       padding-right:5px;
       }
+.container {
+  position: relative;
+  width: 50%;
+}
 .container:hover .overlay {
   opacity: 1;
 }
