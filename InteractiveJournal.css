@@ -109,6 +109,9 @@
       border-radius: 5px;
       padding-right:5px;
       }
+.container:hover .overlay {
+  opacity: 1;
+}
 .overlay {
   position: absolute; 
   bottom:0; 
@@ -124,6 +127,4 @@
   text-align: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
+
