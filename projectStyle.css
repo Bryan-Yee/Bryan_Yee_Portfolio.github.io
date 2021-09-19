@@ -22,96 +22,185 @@ border-radius : 15px;
 .header {
   text-align: center;
   padding: 32px;
-}
-/*flex-wrap = should the picture wrap or not, like a grid but without bootstrap*/
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 25px;
-}
+}  
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
-  max-width: 25%;
-  padding: 4px;
-}
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
+    /*-------------------------------*/
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 75%;
-    max-width: 75%;
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     
-  }
-}
-  
-  /*-------image overlay----------*/
-  
-  .container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 0px 0px 15px 15px;
-
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-
-  
-  /*-------------------------------*/
-
-  .pool:link {
-    overflow: hidden;
-    font-size:20px;
-    text-decoration:none;
-    color: darkblue;
-  }
-  .pool:hover{
-text-decoration:overline underline;
-padding:5px;
-  }
+    :root {
+      --base-font-size: 16px;
+      --base-font-family: sans-serif;
+      --base-font-color: #2d3748;
+      --base-font-weight: 400;
+      --base-line-height: 1.5;
+      --grid-max-columns: 4;
+      --grid-gap: 1.5rem;
+      --grid-zoom-row: span 1 / span 1;
+      --grid-zoom-col: span 1 / span 1;
+      --overlay-color: rgba(0, 0, 0, .5);
+      --white-color: #fff;
+    }
+    
+    body {
+      font-size: var(--base-font-size);
+      font-family: var(--base-font-family);
+      font-weight: var(--base-font-weight);
+      line-height: var(--base-line-height);
+      text-rendering: optimizelegibility;
+      text-size-adjust: 100%;
+      color: var(--base-font-color);
+      padding: 2em 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .content {
+      text-align: center;
+      margin-bottom: 4em;
+    }
+    
+    .content h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: .5em;
+    }
+    
+    .gallery-container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(var(--grid-max-columns), minmax(0, 1fr));
+      grid-gap: var(--grid-gap);
+    }
+    
+    .gallery-container .gallery-item {
+      grid-column: var(--grid-zoom-col);
+      grid-row: var(--grid-zoom-row);
+      transition: .25s transform ease-out,
+            .25s box-shadow ease-out;
+    }
+    
+    .gallery-container .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .gallery-container .gallery-item img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius : 15px;
+    }
+    
+    .gallery-container .gallery-item.zoom-row-2 {
+      --grid-zoom-row: span 2 / span 2;
+    }
+    
+    .gallery-container .gallery-item.zoom-col-2 {
+      --grid-zoom-col: span 2 / span 2;
+    }
+    
+    .gallery-container .gallery-item.zoom-row-3 {
+      --grid-zoom-row: span 3 / span 3;
+    }
+    
+    .gallery-container .gallery-item.zoom-col-3 {
+      --grid-zoom-col: span 3 / span 3;
+    }
+    
+    .gallery-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--overlay-color);
+      overflow: hidden; /*was hidden*/ 
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      height: 0;
+      opacity: 0;
+      transition: opacity .3s linear;
+      z-index: 1050;
+    }
+    
+    .gallery-modal .gallery-details {
+      background-color: var(--white-color);
+      max-width: 700px;
+      width: 100%;
+      margin: .75rem;
+      height: min-content;
+      transform: translatey(-100%);
+      transition: .3s transform;
+    }
+    
+    .gallery-modal .gallery-details img {
+      width: 100%;
+      height: 400%;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content {
+      padding: .75rem 1.5rem 1.5rem;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content .gallery-p {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content .gallery-p:first-child {
+      margin-bottom: .75rem;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content .gallery-p span:first-child {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+    
+    .gallery-modal.active {
+      height: 100%;
+      opacity: 1;
+      overflow-y: auto;
+    }
+    
+    .gallery-modal.active .gallery-details {
+      transform: none;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      .container {
+        padding-right: .75rem;
+        padding-left: .75rem;
+      }
+    }
+    
+    @media screen and (max-width: 800px) {
+      .gallery-container {
+        --grid-max-columns: 2;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .gallery-container {
+        --grid-max-columns: 1;
+      }
+      
+      .gallery-container .gallery-item {
+        --grid-zoom-col: span 1 / span 1 !important;
+        --grid-zoom-row: span 1 / span 1 !important;
+      }
+    }
+    
 
  
