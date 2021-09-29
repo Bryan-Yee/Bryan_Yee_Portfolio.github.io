@@ -7,25 +7,25 @@ const zoomChoices = {
 window.addEventListener("DOMContentLoaded", (event) => {
 	const items = [
 		{
-			imageUrl: "Illustration87.png",
-			alt: "image1",
+			imageUrl: "Pictures/EoH/The_power_of_Happiness_TITLE.png",
+			alt: "The Power of Happiness",
 			author: "Bryan Yee",
-			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
+			description: "This was the cover art for our game mock-up Escape of Happiness"
 		},
 		{
-			imageUrl: "Kobold.png",
+			imageUrl: "Pictures/EoH/Illustration93.png",
 			alt: "image2",
 			author: "Bryan Yee",
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
 		},
         {
-			imageUrl: "kjgjjggvbbhhhyyyhh.png",
+			imageUrl: "Pictures/Concept_Art/Illustration61.png",
 			alt: "image2",
 			author: "Bryan Yee",
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
 		},
         {
-			imageUrl: "Illustration66.png",
+			imageUrl: "Pictures/Animated/rotoscopehbjnkm.gif",
 			alt: "image2",
 			author: "Bryan Yee",
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
