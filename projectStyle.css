@@ -24,6 +24,16 @@ border-radius : 15px;
   padding: 32px;
 }  
 
+.pool:link {
+  overflow: hidden;
+  font-size:20px;
+  text-decoration:none;
+  color: darkblue;
+}
+.pool:hover{
+text-decoration:overline underline;
+padding:5px;
+}
 
     /*-------------------------------*/
 
