@@ -76,7 +76,11 @@ padding:10px;
 
 }
 
-
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
 
 * {box-sizing: border-box;}
 
