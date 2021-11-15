@@ -24,6 +24,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			author: "Bryan Yee",
 			description: "This is one of my D&D characters, Ito.  They're an Owlfolk that travels across the world following the stars, using their mask inscripted with a map of the constellations."
 		},
+        {
+			imageUrl: "Pictures/Ta Shivan.PNG",
+			alt: "Ito",
+			author: "Bryan Yee",
+			description: "This is one of my Dungeons & Destiny characters, Ta Shivan. She's from a far flung future, where she happened upon a TTRPG book and took it as real magic. Using her inert magics as if she was a witch. She's has a knack for trinkets and collects whatever she thinks will help her cast her spells. She is also proficient in rocket launchers :D"
+		},
+        
 	]
 	
 	makeGalleries(items);
