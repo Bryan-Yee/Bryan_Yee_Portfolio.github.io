@@ -7,7 +7,7 @@ const zoomChoices = {
 window.addEventListener("DOMContentLoaded", (event) => {
 	const items = [
 		{
-			imageUrl: "Pictures\SharaEldenriver.png",
+			imageUrl: "Pictures/SharaEldenriver.png",
 			alt: "Shara Eldenriver",
 			author: "Bryan Yee",
 			description: "This is one of my D&D characters, Shara Eldenriver. She's a high elf who was originally a very powerful mage but lost her magic after an experiment gone wrong. Now she's an unhinged sword wielding barbarian."
@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			description: "This character doesn't have a name as they're meant to be a self insert for the player."
 		},
         {
-			imageUrl: "Pictures\Ito.png",
+			imageUrl: "Pictures/Ito.png",
 			alt: "Ito",
 			author: "Bryan Yee",
 			description: "This is one of my D&D characters, Ito.  They're an Owlfolk that travels across the world following the stars, using their mask inscripted with a map of the constellations."
