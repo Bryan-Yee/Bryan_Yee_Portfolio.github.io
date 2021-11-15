@@ -1,24 +1,24 @@
-
-  * {
+* {
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
 body {
-margin: 20px;
-    font-family: Arial;
-    padding:20px;
-    background-color: #ffe9ac;
-   
-    padding-bottom:500px;
+  margin: 20px;
+  font-family: Arial;
+  padding:20px;
+  background-color: #ffe9ac;
+}
+hr{
+  border-width:3px; 
+  color: darkblue;
+border-radius: 5px;
+padding-right:5px;
 }
 
- hr{
-    border-width:3px; 
-    color: darkblue;
-  border-radius: 5px;
-  padding-right:5px;
-  }
+.header {
+  text-align: center;
+  padding: 32px;
+}  
 
 .pool:link {
   overflow: hidden;
@@ -31,77 +31,189 @@ text-decoration:overline underline;
 padding:5px;
 }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-
-/* Add a card effect for articles */
 .card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
+  background-color: white;
   padding: 20px;
-  text-align: center;
-  background: #ddd;
   margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+    /*-------------------------------*/
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-    .coolButton {
-      background-color: black;
-      border: none;
-      color: white;
-      padding: 15px 32px;
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --base-font-size: 16px;
+      --base-font-family: sans-serif;
+      --base-font-color: #2d3748;
+      --base-font-weight: 400;
+      --base-line-height: 1.5;
+      --grid-max-columns: 4;
+      --grid-gap: 1.5rem;
+      --grid-zoom-row: span 1 / span 1;
+      --grid-zoom-col: span 1 / span 1;
+      --overlay-color: rgba(0, 0, 0, .5);
+      --white-color: #fff;
+    }
+    
+    body {
+      font-size: var(--base-font-size);
+      font-family: var(--base-font-family);
+      font-weight: var(--base-font-weight);
+      line-height: var(--base-line-height);
+      text-rendering: optimizelegibility;
+      text-size-adjust: 100%;
+      color: var(--base-font-color);
+      padding: 2em 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .content {
       text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
+      margin-bottom: 4em;
     }
-  
-    hr{
-      border-width:3px; 
-      color: darkblue;
-    border-radius: 5px;
-    padding-right:5px;
+    
+    .content h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: .5em;
     }
-  
+    
+    .gallery-container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(var(--grid-max-columns), minmax(0, 1fr));
+      grid-gap: var(--grid-gap);
+    }
+    
+    .gallery-container .gallery-item {
+      grid-column: var(--grid-zoom-col);
+      grid-row: var(--grid-zoom-row);
+      transition: .25s transform ease-out,
+            .25s box-shadow ease-out;
+    }
+    
+    .gallery-container .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .gallery-container .gallery-item img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      
+    }
+    
+    .gallery-container .gallery-item.zoom-row-2 {
+      --grid-zoom-row: span 2 / span 2;
+    }
+    
+    .gallery-container .gallery-item.zoom-col-2 {
+      --grid-zoom-col: span 2 / span 2;
+    }
+    
+    .gallery-container .gallery-item.zoom-row-3 {
+      --grid-zoom-row: span 3 / span 3;
+    }
+    
+    .gallery-container .gallery-item.zoom-col-3 {
+      --grid-zoom-col: span 3 / span 3;
+    }
+    
+    .gallery-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--overlay-color);
+      overflow: hidden; /*was hidden*/ 
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      height: 0;
+      opacity: 0;
+      transition: opacity .3s linear;
+      z-index: 1050;
+    }
+    
+    .gallery-modal .gallery-details {
+      background-color: var(--white-color);
+      max-width: 700px;
+      width: 100%;
+      margin: .75rem;
+      height: min-content;
+      transform: translatey(-100%);
+      transition: .3s transform;
+    }
+    
+    .gallery-modal .gallery-details img {
+      width: 100%;
+      height: 400%;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content {
+      padding: .75rem 1.5rem 1.5rem;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content .gallery-p {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content .gallery-p:first-child {
+      margin-bottom: .75rem;
+    }
+    
+    .gallery-modal .gallery-details .gallery-content .gallery-p span:first-child {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+    
+    .gallery-modal.active {
+      height: 100%;
+      opacity: 1;
+      overflow-y: auto;
+    }
+    
+    .gallery-modal.active .gallery-details {
+      transform: none;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      .container {
+        padding-right: .75rem;
+        padding-left: .75rem;
+      }
+    }
+    
+    @media screen and (max-width: 800px) {
+      .gallery-container {
+        --grid-max-columns: 2;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .gallery-container {
+        --grid-max-columns: 1;
+      }
+      
+      .gallery-container .gallery-item {
+        --grid-zoom-col: span 1 / span 1 !important;
+        --grid-zoom-row: span 1 / span 1 !important;
+      }
+    }
+    
+
+ 
