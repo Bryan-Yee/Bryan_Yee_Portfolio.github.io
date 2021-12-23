@@ -25,13 +25,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
 		},
         {
-			imageUrl: "Pictures/Animated/rotoscopehbjnkm.gif",
+			imageUrl: "Pictures/Concept_Art/Ice Desert 2.PNG",
 			alt: "image2",
 			author: "Bryan Yee",
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
 		},
         {
-			imageUrl: "Illustration104.png",
+			imageUrl: "Pictures/Concept_Art/PartyImpass.png",
 			alt: "image2",
 			author: "Bryan Yee",
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
