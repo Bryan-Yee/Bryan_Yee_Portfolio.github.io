@@ -9,10 +9,10 @@
       font-family: Arial;
       padding:20px;
       background-color: #ffeebf;
-     
       padding-bottom:500px;
   }
-  
+
+
    hr{
       border-width:3px; 
       color: darkblue;
@@ -22,7 +22,7 @@
   
   .pool:link {
     overflow: hidden;
-    font-size:20px;
+    font-size:25px;
     text-decoration:none;
     color: darkblue;
   }
