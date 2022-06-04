@@ -7,28 +7,22 @@ const zoomChoices = {
 window.addEventListener("DOMContentLoaded", (event) => {
 	const items = [
 		{
-			imageUrl: "Pictures/SharaEldenriver.png",
-			alt: "Shara Eldenriver",
-			author: "Bryan Yee",
-			description: "This is one of my D&D characters, Shara Eldenriver. She's a high elf who was originally a very powerful mage but lost her magic after an experiment gone wrong. Now she's an unhinged sword wielding barbarian."
+			imageUrl: "Pictures/EoH/EoH enemy concepts.png",
+			alt: "Enemy Concept Art",
+			author: " ",
+			description: "This was a concept drawing of various enemies you would face."
 		},
 		{
 			imageUrl: "Pictures/EoH/Illustration93.png",
 			alt: "Escape from Happiness Main Character",
-			author: "Bryan Yee",
-			description: "This character doesn't have a name as they're meant to be a self insert for the player."
+			author: " ",
+			description: "First pass of the Main Character"
 		},
         {
-			imageUrl: "Pictures/Ito.png",
-			alt: "Ito",
-			author: "Bryan Yee",
-			description: "This is one of my D&D characters, Ito.  They're an Owlfolk that travels across the world following the stars, using their mask inscripted with a map of the constellations."
-		},
-        {
-			imageUrl: "Pictures/Ta Shivan.PNG",
-			alt: "Ito",
-			author: "Bryan Yee",
-			description: "This is one of my Dungeons & Destiny characters, Ta Shivan. She's from a far flung future, where she happened upon a TTRPG book and took it as real magic. Using her inert magics as if she was a witch. She's has a knack for trinkets and collects whatever she thinks will help her cast her spells. She is also proficient in rocket launchers :D"
+			imageUrl: "Pictures/EoH/EoH MCconcept art.png",
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
 		},
         
 	]
