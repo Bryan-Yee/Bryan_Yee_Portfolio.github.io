@@ -12,23 +12,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			author: "Bryan Yee",
 			description: "This was the cover art for our game mock-up Escape of Happiness"
 		},
-		{
-			imageUrl: "Pictures/EoH/Illustration93.png",
-			alt: "image2",
-			author: "Bryan Yee",
-			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
-		},
         {
 			imageUrl: "Pictures/Concept_Art/Illustration61.png",
 			alt: "image2",
 			author: "Bryan Yee",
-			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
+			description: "This was a concept piece I did for a friend, for their game."
 		},
         {
 			imageUrl: "Pictures/Concept_Art/Ice Desert 2.PNG",
 			alt: "image2",
 			author: "Bryan Yee",
-			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
+			description: "This was a concept piece I did for a friend, for their game."
 		},
         {
 			imageUrl: "Pictures/Concept_Art/PartyImpass.png",
