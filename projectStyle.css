@@ -9,6 +9,8 @@ body {
   background-color: #ffeebf;
 }
 hr{
+  border-top:1px solid darkblue;
+  margin:20px;
   border-width:3px; 
   color: darkblue;
 border-radius: 5px;
@@ -85,6 +87,7 @@ padding:5px;
       width: 100%;
       grid-template-columns: repeat(var(--grid-max-columns), minmax(0, 1fr));
       grid-gap: var(--grid-gap);
+      padding:50px;
     }
     
     .gallery-container .gallery-item {
