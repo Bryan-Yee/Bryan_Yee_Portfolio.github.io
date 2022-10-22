@@ -24,7 +24,72 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			author: " ",
 			description: "Final concept of the Main Character."
 		},
-        
+		{
+			imageUrl: "Pictures/EoH/Player_Corrupt.gif",
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},        
+		{
+			imageUrl: "Pictures/EoH/mock-export.png" ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},        
+		{
+			imageUrl:"Pictures/EoH/Battle_Menu(B)_2(224x128).png"  ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},        
+		{
+			imageUrl: "Pictures/EoH/Drill_Warrior(TANK)_Isometric.gif" ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/Tileset_Happiness(288x352).png"  ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/EnemyBOSSSprite (still)4.gif"  ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/PC_BattleUI all.gif"  ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/Player Death animation-export.gif",
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/Player Death animation6-export.gif" ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/Player_Wake_Up2test-export.gif" ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
+		{
+			imageUrl: "Pictures/EoH/Player_Wake_Up 3-export.gif" ,
+			alt: "Escape of Happiness Concept Art",
+			author: " ",
+			description: "Final concept of the Main Character."
+		},
 	]
 	
 	makeGalleries(items);

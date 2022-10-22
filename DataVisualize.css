@@ -8,16 +8,19 @@ body {
 margin: 20px;
     font-family: Arial;
     padding:20px;
-    background-color: #ffeebf;
-   
+    background-color: #1f3b48;
+   color:white;
     padding-bottom:500px;
 }
 
  hr{
     border-width:3px; 
-    color: darkblue;
+    color: black;
   border-radius: 5px;
   padding-right:5px;
+  border-style:none;
+  height:0px;
+  overflow:auto;
   }
 
 .pool:link {
@@ -56,7 +59,7 @@ padding:5px;
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
+   background-color: black;
    padding: 20px;
    margin-top: 20px;
 }
@@ -98,10 +101,4 @@ padding:5px;
       border-radius: 4px;
     }
   
-    hr{
-      border-width:3px; 
-      color: darkblue;
-    border-radius: 5px;
-    padding-right:5px;
-    }
-  
+

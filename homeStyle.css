@@ -8,7 +8,7 @@
   margin: 20px;
       font-family: Arial;
       padding:20px;
-      background-color: #ffeebf;
+      background-color: #56666B;
       padding-bottom:500px;
   }
   
@@ -43,7 +43,9 @@
   margin: auto;
 }
 
-
+p {
+  color: #330036;
+}
 
 .row {
   margin-left: 10%;
@@ -77,7 +79,7 @@ padding:10px;
 }
 
 .card {
-  background-color: white;
+  background-color: #EEE1B3;
   padding: 20px;
   margin-top: 20px;
 }
@@ -110,7 +112,6 @@ padding:10px;
   color: white;
   font-size: 50px;
   text-align: center;
-  
 }
 
 .container:hover .overlay {
