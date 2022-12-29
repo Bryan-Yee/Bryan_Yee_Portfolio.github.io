@@ -8,15 +8,15 @@
   margin: 20px;
       font-family: Arial;
       padding:20px;
-      background-color: #ffeebf;
+      background-color: lightgrey;
       padding-bottom:500px;
   }
   
    hr{
-    border-top:1px solid darkblue;
+    border-top:1px solid black;
       border-width:3px; 
-      color: darkblue;
-    border-radius: 5px;
+      color: black;
+    border-radius: 3px;
     padding-right:5px;
     }
   

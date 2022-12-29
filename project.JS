@@ -12,6 +12,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			author: "Bryan Yee",
 			description: "This was the cover art for our game mock-up Escape of Happiness"
 		},
+		{
+			imageUrl: "Pictures/Concept_Art/Main_Character_Concept_Art.png",
+			alt: "Main Character for the game Drink Run",
+			author: "Bryan Yee",
+			description: "This is some of my concept art for the main character of Drink Run. We wanted to go with a cyberpunk bar theme, so after a lot of back and forth, we settled on the (A) design."
+		},
+		{
+			imageUrl: "Pictures/SharaEldenriver.png",
+			alt: "Shara Eldenriver",
+			author: "Bryan Yee",
+			description: "This is one of my D&D characters, Shara Eldenriver. She's a high elf who was originally a very powerful mage but lost her magic after an experiment gone wrong. Now she's an unhinged sword wielding barbarian."
+		},
         {
 			imageUrl: "Pictures/Concept_Art/Illustration61.png",
 			alt: "image2",
@@ -31,12 +43,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			description: "TESTING TESTING TESTING HOPEFULLY THIS WORKS IDK WHAT I'LL DO IF THIS DOESN'T PROBABLY CRY AND GIVE UP."
 		},
 		{
-			imageUrl: "Pictures/SharaEldenriver.png",
-			alt: "Shara Eldenriver",
-			author: "Bryan Yee",
-			description: "This is one of my D&D characters, Shara Eldenriver. She's a high elf who was originally a very powerful mage but lost her magic after an experiment gone wrong. Now she's an unhinged sword wielding barbarian."
-		},
-		{
 			imageUrl: "Pictures/EoH/Illustration93.png",
 			alt: "Escape from Happiness Main Character",
 			author: "Bryan Yee",
@@ -50,7 +56,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		},
         {
 			imageUrl: "Pictures/Ta Shivan.PNG",
-			alt: "Ito",
+			alt: "Ta Shivan",
 			author: "Bryan Yee",
 			description: "This is one of my Dungeons & Destiny characters, Ta Shivan. She's from a far flung future, where she happened upon a TTRPG book and took it as real magic. Using her inert magics as if she was a witch. She's has a knack for trinkets and collects whatever she thinks will help her cast her spells. She is also proficient in rocket launchers :D"
 		}

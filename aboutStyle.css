@@ -7,23 +7,24 @@ body {
 margin: 20px;
     font-family: Arial;
     padding:20px;
-    background-color: #ffeebf;
+    background-color: lightgrey;
    
     padding-bottom:500px;
 }
 
  hr{
     border-width:3px; 
-    color: darkblue;
+    color: black;
   border-radius: 5px;
   padding-right:5px;
+  border-top: 3px solid black;
   }
 
 .pool:link {
   overflow: hidden;
   font-size:25px;
   text-decoration:none;
-  color: darkblue;
+  color: black;
 }
 .pool:hover{
 text-decoration:overline underline;

@@ -8,13 +8,13 @@
   margin: 20px;
       font-family: Arial;
       padding:20px;
-      background-color: #56666B;
+      background-color: lightgrey;
       padding-bottom:500px;
   }
   
    hr{
       border-width:3px; 
-      color: darkblue;
+      color: black;
     border-radius: 5px;
     padding-right:5px;
     }
@@ -23,7 +23,7 @@
     overflow: hidden;
     font-size:25px;
     text-decoration:none;
-    color: darkblue;
+    color: black;
   }
   .pool:hover{
   text-decoration:overline underline;
@@ -44,7 +44,7 @@
 }
 
 p {
-  color: #330036;
+  color: black;
 }
 
 .row {
@@ -79,7 +79,7 @@ padding:10px;
 }
 
 .card {
-  background-color: #EEE1B3;
+  background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
